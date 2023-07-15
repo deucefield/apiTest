@@ -1,5 +1,4 @@
 import sys
-
 from chuck_api import ChuckAPI
 
 ca = ChuckAPI()
