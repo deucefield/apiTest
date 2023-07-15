@@ -18,12 +18,10 @@ class ChuckAPI:
 
         return requests.get(f'{base_url}{categories_request}').json()
 
-    def get_joke(self, category = None):
+    def get_joke(self, category=None):
         """Returns response of requests to random or categorized joke"""
 
-        if category == None:
+        if category is None:
             return requests.get(f'{base_url}{random_request}')
         else:
             return requests.get(f'{base_url}{random_request}{category_query_param}{category}')
-
-
